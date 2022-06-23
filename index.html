@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest House Velina</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <section class="banner">
+            <h1>Guest House Velina</h1>
+        </section>
+
+        <section class="description">
+            <div>
+
+                <h2>House Description</h2>
+                <p>Guest house Velina is an old town house in the seaside village Velika. The hoouse is completely renovated, ready to welcome guests from all around the world. The three stores house has 4 bedrooms, living room, kitchen,3 bathrooms,small yard and a summer kitchen. It is perfect for big groups or families. The nearest beach is within 5 minutes drive, in village Lozenetz. There you can also find supermarkets, greens market, bars and restaurants.</p>
+            </div>
+            <img src="./images/house2.jpg" alt="Velina House" />
+        </section>
+
+        <section class="rooms">
+            <div class="room" onclick="onRoomClick('room1')">
+                Room 1
+            </div>
+            <div class="room" onclick="onRoomClick('kitchen')">
+                Kitchen
+            </div>
+            <div class="room">
+                Room 2
+            </div>
+
+            <div class="room">
+                Room 3
+            </div>
+        </section>
+
+        <section class="booking-calendar">
+            <h3>June</h3>
+            <section class="days">
+                <div class="day">1</div>
+                <div class="day active-day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day active-day">1</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+            </section>
+        </section>
+    </main>
+
+    <section class="room-modal">
+        <img id="close-modal" src="./images/close.png" alt="close" onclick="hideRoomModal()" />
+        <img id="room-preview" src="" alt="room" />
+    </section>
+
+    <section id="booking-modal">
+        <img id="close-booking-modal" src="./images/close.png" alt="close" onclick="hideBookingModal()" />
+
+        <div class="booking-form">
+            <h3>Please write your details</h3>
+            <form class="booking-form-element">
+                <div class="input-field">
+                    <label for="firstName">First name:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <div class="input-field">
+                    <label for="firstName">Family name:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <div class="input-field">
+                    <label for="firstName">Phone number:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <div class="input-field">
+                    <label for="firstName">Billing address:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>
